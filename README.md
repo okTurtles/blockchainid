@@ -16,7 +16,7 @@ It provides a foundation upon which a blockchain-based, blockchain-agnostic, *us
 ## Usage Example
 
 - With BlockchainID, users will be able to use a traditional username/password pair to log in to any website or service, and that service will be able to verify them using the information that's stored in a blockchain. It can be any blockchain that supports arbitrary key/value mappings (like Namecoin, Ethereum, NXT, etc.).
-- Users can send each other end-to-end encrypted messages by knowing each other's BlockchainIDs in a MITM-proof way by retrieving information via blockchain thin-clients, or trusted servers like [DNSChain](https://github.com/okTurtles/dnschain).
+- Users can send each other end-to-end encrypted messages by knowing each other's BlockchainIDs in a MITM-proof way by retrieving information via blockchain nodes, thin-clients, or trusted servers like [DNSChain](https://github.com/okTurtles/dnschain).
 
 ## Motivation
 
