@@ -1,13 +1,13 @@
 # Blockchain ID (DRAFT Specification)
 
-This is a DRAFT for an Internet specification that describes a blockchain-based identity format that's intended to serve as a decentralized replacement for login systems such as:
+This is a DRAFT for an Internet specification that describes a blockchain-based identity __format__ that's intended to serve as a decentralized replacement for login systems such as:
 
 - OpenID
 - Facebook login
 - Mozilla persona
 - GitHub login
 
-It provides a foundation upon which to a blockchain-based, *usable* Web of Trust (WoT) system can be built that has the potential to:
+It provides a foundation upon which a blockchain-based, blockchain-agnostic, *usable* Web of Trust (WoT) system can be built that has the potential to:
 
 - Verify the identity of an individual based solely on their username (which can be a traditional username, or an email address).
 - Verify that someone is a member of your church/group/org (publicly, or privately to group members only).
