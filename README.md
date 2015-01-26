@@ -1,4 +1,4 @@
-# Blockchain ID (DRAFT Specification)
+# BlockchainID (DRAFT Specification)
 
 This is a DRAFT for an Internet specification that describes a blockchain-based identity __format__ that's intended to serve as a decentralized replacement for login systems such as:
 
@@ -12,6 +12,10 @@ It provides a foundation upon which a blockchain-based, blockchain-agnostic, *us
 - Verify the identity of an individual based solely on their username (which can be a traditional username, or an email address).
 - Verify that someone is a member of your church/group/org (publicly, or privately to group members only).
 - Verify that a community member is allowed to vote in an election.
+
+## Usage Example
+
+With BlockchainID, users will be able to use a traditional username/password pair to login to any website or service, and that service will be able to verify them using the information that's stored in a blockchain. It can be any blockchain that supports arbitrary key/value mappings (like Namecoin, Ethereum, NXT, etc.).
 
 ## Motivation
 
