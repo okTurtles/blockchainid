@@ -24,7 +24,7 @@ Traditional login systems have identities that are owned by corporations instead
 
 Companies can use their ownership of your identity to take it away from you, to censor you, and otherwise manipulate you.
 
-With the blockchain, it is possible to say: "I am me, and here's what I'd like you to know about me." and provide easy-to-verify proof of that fact.
+With the blockchain, it is possible to say: "I am me, and here's what I'd like you to know about me." and provide easy-to-verify proof of that fact to web applications and individuals alike.
 
 ## Format Specification
 
