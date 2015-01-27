@@ -35,14 +35,20 @@ Blockchain ID augments other ID systems (like [Openname Profiles](https://github
 
 ```json
 {
-    "keys": {
-        "pub": "{curve25519}aoisjf8fj23894u23u8jasdfjafd/=",
-        "priv": "{scrypt,curve25519}aoisjf8fj23894u23u8jasdfjafd/="
-    },
-    "attestations": {
+    "blockchainid": {
+        "keys": {
+            "pub": "{curve25519}aoisjf8fj23894u23u8jasdfjafd/=",
+            "priv": "{scrypt,curve25519}aoisjf8fj23894u23u8jasdfjafd/="
+        },
+        "attestations": {
 
+        }
     }
 }
 ```
 
-TBD
+### TBD:
+
+- Decide how to represent values like `curve25519`, `scrypt`, etc. Do we care about compressing those due to blockchain-specific space limitations or not?
+- Decide format of `"keys"` and `"attestations"`
+- Show examples of `"attestations"`
