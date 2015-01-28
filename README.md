@@ -36,6 +36,7 @@ Blockchain ID augments other ID systems (like [Openname Profiles](https://github
 ```json
 {
     "blockchainid": {
+        "version": "1",
         "keys": {
             "pub": "{curve25519}aoisjf8fj23894u23u8jasdfjafd/=",
             "priv": "{scrypt,curve25519}aoisjf8fj23894u23u8jasdfjafd/="
@@ -46,6 +47,12 @@ Blockchain ID augments other ID systems (like [Openname Profiles](https://github
     }
 }
 ```
+
+What makes this a rather unique approach?
+
+Notice the `"priv"` key. Guess what that is? That's the user's encrypted private key that corresponds to the public key. Yep. :)
+
+This is a work in progress. Format will be fully specified "soonish". You are welcome to join in and help with it! For now, just open an issue.
 
 ### TBD:
 
