@@ -48,12 +48,22 @@ Blockchain ID augments other ID systems (like [Openname Profiles](https://github
 }
 ```
 
-- Notice the `"priv"` key. Guess what that is? That's the user's private key that corresponds to `"pub"`. Currently the spec defaults to encrypting it using [scrypt + AES](https://www.tarsnap.com/scrypt.html). Yep. That means the password must be a strong one. Strength can be enforced in a similar manner to how Peerio and miniLock enforce password strength.
-- `"priv"` is optional. Applications may choose to not use BlockchainID in this manner, electing instead to store the private key on some secure device, or some other manner. However, storing the encrypted private key in the blockchain itself results in massive UX improvements to all software that requires users to authenticate. If necessary, users can always use password managers to generate the password with a cryptographically secure random number generator.
+#### Keys
 
-This is a work in progress. Format will be fully specified "soonish". You are welcome to join in and help with it! For now, just open an issue.
+- Notice the `"priv"` key. Guess what that is? That's the user's private key that corresponds to `"pub"`. Currently the spec defaults to encrypting it using [scrypt + AES](https://www.tarsnap.com/scrypt.html). Yep. That means the password must be a strong one. Strength can be enforced in a similar manner to how Peerio and miniLock enforce password strength.
+- `"priv"` is __optional.__ Applications may choose to not use BlockchainID in this manner, electing instead to store the private key on some secure device, or some other manner. However, storing the encrypted private key in the blockchain itself results in massive UX improvements to all software that requires users to authenticate. If necessary, users can always use password managers to generate the password with a cryptographically secure random number generator.
+
+#### Attestations
+
+Attestations are a way of attesting some fact. They can be used to indicate that someone belongs to some group (secret or public), that someone trusts someone else, etc.
+
+They can change the context in which users understand each other online.
+
+We are still working out the details!
 
 ### TBD:
+
+This is a work in progress. Format will be fully specified "soonish". You are welcome to join in and help with it! For now, just open an issue.
 
 - Decide how to represent values like `curve25519`, `scrypt`, etc. Do we care about compressing those due to blockchain-specific space limitations or not?
 - Decide format of `"keys"` and `"attestations"`
