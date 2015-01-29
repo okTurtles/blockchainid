@@ -48,9 +48,8 @@ Blockchain ID augments other ID systems (like [Openname Profiles](https://github
 }
 ```
 
-What makes this a rather unique approach?
-
-Notice the `"priv"` key. Guess what that is? That's the user's encrypted private key that corresponds to the public key. Yep. :)
+- Notice the `"priv"` key. Guess what that is? That's the user's private key that corresponds to `"pub"`. Currently the spec defaults to encrypting it using [scrypt + AES](https://www.tarsnap.com/scrypt.html). Yep. That means the password must be a strong one. Strength can be enforced in a similar manner to how Peerio and MiniLock enforce password strength.
+- `"priv"` is optional. Applications may choose to not use BlockchainID in this manner, electing instead to store the private key on some secure device, or some other manner. However, storing the encrypted private key in the blockchain itself results in massive UX improvements to all software that requires users to authenticate. If necessary, users can always use password managers to generate the password with a cryptographically secure random number generator.
 
 This is a work in progress. Format will be fully specified "soonish". You are welcome to join in and help with it! For now, just open an issue.
 
