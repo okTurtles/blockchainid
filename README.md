@@ -31,7 +31,7 @@ With the blockchain, it is possible to say: "I am me, and here's what I'd like y
 Blockchain ID augments other ID systems (like [Openname Profiles](https://github.com/openname/openname-specifications)) with two extra key/value pairs:
 
 - __"keys"__
-- __"statements"__
+- __"endorsements"__
 
 ```json
 {
@@ -41,7 +41,7 @@ Blockchain ID augments other ID systems (like [Openname Profiles](https://github
             "pub": "{curve25519}aoisjf8fj23894u23u8jasdfjafd/=",
             "priv": "{scrypt,curve25519}aoisjf8fj23894u23u8jasdfjafd/="
         },
-        "statements": {
+        "endorsements": {
 
         }
     }
@@ -53,9 +53,9 @@ Blockchain ID augments other ID systems (like [Openname Profiles](https://github
 - Notice the `"priv"` key. Guess what that is? That's the user's private key that corresponds to `"pub"`. Currently the spec defaults to encrypting it using [scrypt + AES](https://www.tarsnap.com/scrypt.html). Yep. That means the password must be a strong one. Strength can be enforced in a similar manner to how Peerio and miniLock enforce password strength.
 - `"priv"` is __optional.__ Applications may choose to not use BlockchainID in this manner, electing instead to store the private key on some secure device, or some other manner. However, storing the encrypted private key in the blockchain itself results in massive UX improvements to all software that requires users to authenticate. If necessary, users can always use password managers to generate the password with a cryptographically secure random number generator.
 
-#### Statements
+#### Endorsements
 
-Statements are a way of stating some fact. They can be used to indicate that someone belongs to some group (secret or public), that someone trusts someone else, etc.
+Endorsements are a way of endorsing some statement. They can be by users to affirm that someone else belongs to some group (secret or public), that someone trusts someone else, etc.
 
 They can change the context in which users understand each other online.
 
@@ -66,5 +66,5 @@ We are still working out the details!
 This is a work in progress. Format will be fully specified "soonish". You are welcome to join in and help with it! For now, just open an issue.
 
 - Decide how to represent values like `curve25519`, `scrypt`, etc. Do we care about compressing those due to blockchain-specific space limitations or not?
-- Decide format of `"keys"` and `"statements"`
-- Show examples of `"statements"`
+- Decide format of `"keys"` and `"endorsements"`
+- Show examples of `"endorsements"`
