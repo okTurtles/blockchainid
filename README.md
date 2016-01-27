@@ -1,5 +1,7 @@
 # BlockchainID (DRAFT Specification)
 
+**UPDATE: This spec is now being developed as part of the [Blockstack initiative](https://github.com/blockstack/blockchain-id/wiki)**
+
 This is a DRAFT for an Internet specification that describes a blockchain-based identity __format__ that's intended to serve as a decentralized replacement for login systems such as:
 
 - OpenID
