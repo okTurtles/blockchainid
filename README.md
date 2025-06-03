@@ -1,4 +1,4 @@
-# BlockchainID (DRAFT Specification)
+# BlockchainID (DRAFT Specification) - ignore this, just a demo
 
 **UPDATE: This spec is now being developed as part of the [Blockstack initiative](https://github.com/blockstack/blockchain-id/wiki)**
 
